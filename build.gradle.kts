@@ -30,6 +30,7 @@ publishing {
 
 repositories {
     mavenCentral()
+    maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {
@@ -38,6 +39,7 @@ dependencies {
     testImplementation("org.hamcrest:hamcrest:3.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("com.h2database:h2:2.3.232")
+    implementation("com.github.safarislava:querybricks:0.1.0")
 }
 
 tasks.test {
