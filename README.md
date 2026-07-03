@@ -34,7 +34,7 @@ repositories {
 }
 ```
 
-```
+```kotlin
 dependencies {
     implementation("com.github.safarislava:querybricks:0.1.0")
     annotationProcessor("com.github.safarislava:querybricks-scaffold:0.1.0")
@@ -52,7 +52,7 @@ dependencies {
 </repositories>
 ```
 
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>com.github.safarislava</groupId>
@@ -62,7 +62,7 @@ dependencies {
 </dependencies>
 ```
 
-```
+```xml
 <build>
     <plugins>
         <plugin>
