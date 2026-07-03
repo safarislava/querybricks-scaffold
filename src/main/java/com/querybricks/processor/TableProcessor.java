@@ -27,15 +27,14 @@ public final class TableProcessor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         List<? extends Element> interfaces = roundEnv.getElementsAnnotatedWith(Table.class).stream()
-            .filter(element -> element.getKind() == ElementKind.INTERFACE).toList();
-
+            .filter(element -> element.getKind().equals(ElementKind.INTERFACE))
+            .toList();
         for (Element element : interfaces) {
             this.processingEnv.getMessager().printMessage(
                 Diagnostic.Kind.NOTE,
                 "Таблица: " + new SnakeCaseName(new CamelCaseNameWords(element.getSimpleName())).asString()
             );
         }
-
         return true;
     }
 }
