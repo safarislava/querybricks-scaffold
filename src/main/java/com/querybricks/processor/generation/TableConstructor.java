@@ -13,6 +13,10 @@ import java.util.List;
 public final class TableConstructor implements GeneratedMethod {
     private final List<GeneratedField> fields;
 
+    /**
+     * Constructor.
+     * @param fields Fields to initialize.
+     */
     public TableConstructor(List<GeneratedField> fields) {
         this.fields = new ArrayList<>(fields);
     }

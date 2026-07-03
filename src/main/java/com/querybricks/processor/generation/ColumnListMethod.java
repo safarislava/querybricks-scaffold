@@ -9,9 +9,16 @@ import java.util.List;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.Modifier;
 
+/**
+ * Generates the columns() method returning all bound columns of the table.
+ */
 public final class ColumnListMethod implements GeneratedMethod {
     private final List<ExecutableElement> elements;
 
+    /**
+     * Constructor.
+     * @param elements ExecutableElement methods representation of columns.
+     */
     public ColumnListMethod(List<ExecutableElement> elements) {
         this.elements = new ArrayList<>(elements);
     }

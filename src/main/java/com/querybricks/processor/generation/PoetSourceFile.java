@@ -12,6 +12,12 @@ public final class PoetSourceFile {
     private final String packageName;
     private final GeneratedClass origin;
 
+    /**
+     * Constructor.
+     * @param filer Compilation Filer object to write generated file.
+     * @param packageName Package where class should be generated.
+     * @param origin The generated class specification.
+     */
     public PoetSourceFile(Filer filer, String packageName, GeneratedClass origin) {
         this.filer = filer;
         this.packageName = packageName;

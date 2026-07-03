@@ -9,16 +9,27 @@ import com.squareup.javapoet.TypeName;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.Modifier;
 
+/**
+ * Generates a method representing a table column.
+ */
 public final class ColumnMethod implements GeneratedMethod {
     private final ExecutableElement element;
     private final String columnName;
 
-
+    /**
+     * Primary constructor.
+     * @param element ExecutableElement method representation.
+     * @param columnName String representation of the database column name.
+     */
     public ColumnMethod(ExecutableElement element, String columnName) {
         this.element = element;
         this.columnName = columnName;
     }
 
+    /**
+     * Convenience constructor.
+     * @param element ExecutableElement method representation.
+     */
     public ColumnMethod(ExecutableElement element) {
         this(element, new SnakeCaseName(new CamelCaseNameWords(element.getSimpleName())).asString());
     }

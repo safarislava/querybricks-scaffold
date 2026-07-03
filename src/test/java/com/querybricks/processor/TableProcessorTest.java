@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Tests for TableProcessor.
  */
-class TableProcessorTest {
+final class TableProcessorTest {
     @Test
     public void testGeneratedClassContent() {
         MatcherAssert.assertThat(

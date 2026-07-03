@@ -29,6 +29,13 @@ import java.util.Set;
 @SupportedAnnotationTypes("com.querybricks.annotation.Table")
 public final class TableProcessor extends AbstractProcessor {
 
+    /**
+     * Default constructor.
+     */
+    public TableProcessor() {
+        super();
+    }
+
     @Override
     public SourceVersion getSupportedSourceVersion() {
         return SourceVersion.latestSupported();
