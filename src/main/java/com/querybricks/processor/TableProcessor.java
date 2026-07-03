@@ -1,6 +1,8 @@
 package com.querybricks.processor;
 
 import com.querybricks.annotation.Table;
+import com.querybricks.processor.name.CamelCaseNameWords;
+import com.querybricks.processor.name.SnakeCaseName;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;

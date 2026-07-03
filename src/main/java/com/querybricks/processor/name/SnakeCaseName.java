@@ -1,9 +1,9 @@
-package com.querybricks.processor;
+package com.querybricks.processor.name;
 
 public final class SnakeCaseName implements Name {
     private final Words words;
 
-    SnakeCaseName(Words words) {
+    public SnakeCaseName(Words words) {
         this.words = words;
     }
 

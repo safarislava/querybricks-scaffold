@@ -1,4 +1,4 @@
-package com.querybricks.processor;
+package com.querybricks.processor.name;
 
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;

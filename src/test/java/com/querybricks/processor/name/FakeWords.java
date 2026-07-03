@@ -1,4 +1,4 @@
-package com.querybricks.processor;
+package com.querybricks.processor.name;
 
 import java.util.List;
 
