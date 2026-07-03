@@ -32,6 +32,7 @@ final class Compilation {
             final StandardJavaFileManager fileManager = compiler.getStandardFileManager(diagnostics, null, null);
             final Path tempDir = Files.createTempDirectory("codegen-test");
             fileManager.setLocation(StandardLocation.SOURCE_OUTPUT, Collections.singletonList(tempDir.toFile()));
+            fileManager.setLocation(StandardLocation.CLASS_OUTPUT, Collections.singletonList(tempDir.toFile()));
 
             final String classpath = System.getProperty("java.class.path");
 
