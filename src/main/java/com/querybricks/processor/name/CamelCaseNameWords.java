@@ -1,11 +1,18 @@
-package com.querybricks.processor;
+package com.querybricks.processor.name;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Parses a CamelCase string into separate lowercase words.
+ */
 public final class CamelCaseNameWords implements Words {
     private final CharSequence name;
 
+    /**
+     * Constructor.
+     * @param name CamelCase sequence to parse.
+     */
     public CamelCaseNameWords(CharSequence name) {
         this.name = name;
     }
@@ -13,7 +20,7 @@ public final class CamelCaseNameWords implements Words {
     @Override
     public List<String> asList() {
         List<String> words = new ArrayList<>();
-        String nameString = this.name.toString();
+        String nameString = name.toString();
         int indexWordBeginning = 0;
         for (int i = 0; i < nameString.length(); i++) {
             if (Character.isUpperCase(nameString.charAt(i))) {

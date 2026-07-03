@@ -31,6 +31,7 @@ repositories {
 
 dependencies {
     implementation("com.github.safarislava:querybricks:0.1.0")
+    implementation("com.squareup:javapoet:1.13.0")
 
     testImplementation(platform("org.junit:junit-bom:5.11.4"))
     testImplementation("org.junit.jupiter:junit-jupiter")
