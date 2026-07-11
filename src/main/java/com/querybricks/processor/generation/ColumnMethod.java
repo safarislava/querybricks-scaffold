@@ -40,7 +40,7 @@ public final class ColumnMethod implements GeneratedMethod {
         ClassName rawColumn = ClassName.get("com.querybricks.column", "RawColumn");
         return MethodSpec.methodBuilder(element.getSimpleName().toString())
             .addAnnotation(Override.class)
-            .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
+            .addModifiers(Modifier.PUBLIC)
             .returns(TypeName.get(element.getReturnType()))
             .addStatement("return new $T<>(this, new $T<>($S))", tableColumn, rawColumn, columnName)
             .build();

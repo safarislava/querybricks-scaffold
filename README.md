@@ -138,22 +138,22 @@ public final class DbUsersTable implements UsersTable {
     }
 
     @Override
-    public final BoundColumn<Long> id() {
+    public BoundColumn<Long> id() {
         return new TableColumn<>(this, new RawColumn<>("id"));
     }
 
     @Override
-    public final BoundColumn<String> username() {
+    public BoundColumn<String> username() {
         return new TableColumn<>(this, new RawColumn<>("username"));
     }
 
     @Override
-    public final BoundColumn<String> status() {
+    public BoundColumn<String> status() {
         return new TableColumn<>(this, new RawColumn<>("status"));
     }
 
     @Override
-    public final BoundColumn<Instant> createdAt() {
+    public BoundColumn<Instant> createdAt() {
         return new TableColumn<>(this, new RawColumn<>("created_at"));
     }
 
